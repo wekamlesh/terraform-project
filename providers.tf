@@ -1,12 +1,14 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
+      source = "hashicorp/aws"
     }
   }
+
 }
 
-# Configure the AWS Provider
+
 provider "aws" {
-  region = "ap-south-2"
+  region                  = "us-west-2"
+  profile                 = "vscode"
 }
